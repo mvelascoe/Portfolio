@@ -1,17 +1,17 @@
 
 const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-abrir'),
-      navClose = document.getElementById('nav-cerrar')
+      navabrir = document.getElementById('nav-abrir'),
+      navCerrar = document.getElementById('nav-cerrar')
 
-if(navToggle){
-   navToggle.addEventListener('click', () =>{
+if(navabrir){
+   navabrir.addEventListener('click', () =>{
       navMenu.classList.add('show-menu')
    })
 }
 
 
-if(navClose){
-   navClose.addEventListener('click', () =>{
+if(navCerrar){
+   navCerrar.addEventListener('click', () =>{
       navMenu.classList.remove('show-menu')
    })
  }

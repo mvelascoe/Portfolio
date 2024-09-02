@@ -1,6 +1,6 @@
 :root{
     --header-height: 3.5rem;
-    --hue: 4;
+    --hue: 1;
     --first-color: hsl(var(--hue), 100%, 80%);
     --first-color-alt: hsl(var(--hue), 56%, 35%);
     --title-color: hsl(228, 8%, 95%);
@@ -9,7 +9,6 @@
     --container-color: hsl(228, 15%, 15%);
 
     /*Fuentes*/
-
     --body-font: "Poppins", sans-serif;
     --biggest-font-size: 2rem;
     --bigger-font-size: 1.25rem;
