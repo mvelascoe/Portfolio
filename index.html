@@ -13,39 +13,83 @@
 <body>
     <!--------------- SECCION HEADER ----------------->
     <header class="header" id="header">
-        <nav class="nav container"></nav>
-        <a href="#" class="nav__logo">Maritza</a>
+        <nav class="nav container">
+           <a href="#" class="nav__logo">
+              Maritza <span>Velasco</span>
+           </a>
 
-        <div class="nav__menu" id ="nav-menu">
-            <ul class="nav__list">
-                <li>
-                    <a href="#" class="nav__link"></a>
-                </li>
-                <li>
-                    <a href="#" class="nav__link"></a>
-                </li>
-                <li>
-                    <a href="#" class="nav__link"></a>
-                </li>
-                <li>
-                    <a href="#" class="nav__link"></a>
-                </li>
-                <li>
-                    <a href="#" class="nav__link"></a>
-                </li>
-            </ul>
-        </div>
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">Inicio</a>
+                 </li>
 
-    </header>
+                 <li class="nav__item">
+                    <a href="#about" class="nav__link">Sobre Mi</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="#services" class="nav__link">Servicios</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="#projects" class="nav__link">Proyectos</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contacteme</a>
+                 </li>
+              </ul>
+
+              <!-- Cerrar -->
+              <div class="nav__cerrar" id="nav-cerrar">
+                 <i class="ri-close-line"></i>
+              </div>
+           </div>
+
+           <!-- Menu -->
+           <div class="nav__abrir" id="nav-abrir">
+              <i class="ri-menu-line"></i>
+           </div>
+        </nav>
+     </header>
 
     <!--------------- SECCION MAIN ------------------>
     <main class="main">
 
         <!----------------SECCION HOME ------------------>
         <section class="home section" id="home">
+            <div class="home__container container grid">
+               <div class="home__content">
+                  <div class="home__data">
+                     <h3 class="home__subtitulo">
+                        Hola, <span>Yo soy</span>
+                     </h3>
+   
+                     <h1 class="home__titulo">Maritza Velasco</h1>
+   
+                     <h3 class="home__profesion">Web Developer</h3>
+   
+                     <p class="home__descripcion">
+                        Desarrolladora Web, con una gran capacidad de adaptación y un fuerte compromiso con la calidad. Estoy lista para aplicar mis conocimientos en proyectos reales, aportar ideas frescas y seguir aprendiendo en un entorno desafiante..
+                     </p>
+   
+                     <a href="assets/img/project-img-2.jpg" download="" target="_blank" class="button">Descargar CV</a>
+                  </div>
 
-        </section>
+                  <div class="home__social">
+                     <a href="https://github.com/mvelascoe/" target="_blank" class="home__social-link">
+                        <i class="ri-github-fill"></i>
+                     </a>
 
+                     <a href="https://linkedin.com/in/maritza-velasco/" target="_blank" class="home__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                     </a>
+                  </div>
+               </div>
+               <img src="assets/img/perfil.png" alt="" class="home__img">
+            </div>
+         </section>
         <!---------------- SECCION DE TRABAJOS ------------------>
         <section class="work section" id="work">
 
