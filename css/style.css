@@ -44,6 +44,12 @@ a {
   text-decoration: none;
 }
 
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   max-width: 1120px;
   margin-inline: 1.5rem;
@@ -258,6 +264,13 @@ a {
   transform: translateY(-.25rem);
 }
 
+.home__img{
+  width: 300px; /*tamaño de la img*/
+  justify-self: center;
+  mask-image: linear-gradient(to bottom,
+              hsla(var(--hue), 40%, 16%) 60%,
+              transparent 100%)
+}
 
 /*estilo boton*/
 .button {
@@ -272,6 +285,23 @@ a {
 
 .button:hover {
   box-shadow: 0 8px 24px hsla(var(--hue), 100%, 40%, .25);
+}
+
+/*Seccion información*/
+.about__container {
+  row-gap: 2.5rem;
+}
+
+.about__data {
+  text-align: center;
+}
+
+.about__description {
+  margin-bottom: 2rem;
+}
+
+.about__img {
+  justify-self: center;
 }
 
 
@@ -323,4 +353,15 @@ a {
   .home__social {
     column-gap: 1.5rem;
   }
+
+  .about__container {
+    grid-template-columns: 550px 460px;
+    column-gap: 4.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .about__description {
+    margin-bottom: 3rem;
+  }
+
 }
