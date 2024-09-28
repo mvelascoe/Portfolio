@@ -8,7 +8,8 @@
   margin: 0;
 }
 
-
+input,
+textarea,
 button,
 body {
   font-family: var(--body-font);
@@ -20,6 +21,8 @@ body {
   color: var(--text-color);
 }
 
+input,
+textarea,
 button {
   outline: none;
   border: none;
@@ -456,6 +459,46 @@ svg {
   padding-top: 1rem;
 }
 
+.contact__form, 
+.contact__group {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.contact__form {
+  position: relative;
+}
+
+.contact__input {
+  padding: 1rem 1.25rem;
+  border-radius: .5rem;
+  background-color: var(--container-color);
+  color: var(--title-color);
+}
+
+.contact__input::placeholder {
+  color: var(--text-color);
+}
+
+.contact__form textarea {
+  height: 11rem;
+  resize: none;
+  margin-bottom: 2rem;
+}
+
+.contact__button {
+  justify-self: center;
+  cursor: pointer;
+}
+
+.contact__message {
+  position: absolute;
+  left: 0;
+  bottom: 4.5rem;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+}
+
 /*seccion footer*/
 .footer {
   background-color: var(--container-color);
@@ -663,6 +706,20 @@ svg {
   .contact__container {
     grid-template-columns: 680px;
     padding-block: 2.5rem 2rem;
+  }
+
+  .contact__form {
+    row-gap: 1.5rem;
+  }
+  .contact__group {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+  }
+  .contact__input {
+    padding: 1.5rem;
+  }
+  .contact__form textarea {
+    height: 20rem;
   }
 
   .footer {
